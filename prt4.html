@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Practice 2</title>
+    <style>
+        body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 22px;
+	line-height: 1.4;
+	color: #000000; 
+    padding: 50px;
+}
+#foot01{
+    background-color: black;
+    color:white;
+    font-size: 10px;
+    text-align: center;
+    
+
+}
+
+h1, h2, h3 {
+	padding: 10px 0 10px 0;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 22px;
+}
+#container{
+   
+    background-size: cover;
+    
+}
+       
+    </style>
+    </head>
+<body>
+    <div id="container">
+    <h1>Happy Hour!!</h1>
+    <p>Randomize your hangout experience</p>
+
+        <h2>Welcome</h2>
+        <p>Refresh screen to take hangout test</p>
+        <div class="gallery">
+            <img src="C:\wamp64\www\Practice1\img\Large Fruits Package 2.jpg">
+            <img src="">
+        </div>
+        <script>
+       
+  
+/*var username=prompt("enter name");
+
+if (username==="Sarah") {
+    document.write("<h1>Welcome" + " " + username + "</h1>");
+}
+else{
+    document.write("Sorry try again");
+}*/
+//list of bars
+var bars = [
+    'Siggys',
+    'Blind Tiger', 
+    'Zum Schneider',
+    'One Month',
+    'Home sweet home',
+    'Union Pool'
+
+] ;
+// list of friends
+var friends = [
+    'Martan',
+    'Chris',
+    'Lee',
+    'Kayne West',
+    'Amanda',
+    'Sia'
+
+];
+var meals = [
+    'fries',
+    'burger',
+    'tacos',
+    'Pizza',
+    'Macarroni',
+    'Beef'
+
+];
+ var drinks = [
+     'Wine',
+     'Beer',
+     'Water',
+     'Soda',
+     'Juice',
+     'Lemonade'
+
+ ];
+
+var randonNumber = Math.floor(Math.random() * bars.length);
+var barname = bars[randonNumber];
+var friendname  = friends[randonNumber];
+var mealname = meals[randonNumber];
+var mydrink = drinks[randonNumber];
+
+document.write("how about you go to <strong>" + barname + "</strong> with <strong>" + "<img src ='C:\wamp64\www\Practice1\img\sarah3.jpg'>" + friendname + "</strong> and take <strong>" 
+    + "<img src='C:\wamp64\www\Practice1\img\Large Fruits Package 2.jpg'>" + mealname + "</strong> washed down with some <strong>" + mydrink + "</strong>");
+
+</script>
+
+</div>
+<footer id="foot01">
+    <p>Copyright Inspirad</p>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Date();
+</script>
+</footer>
+</body>
+</html>
